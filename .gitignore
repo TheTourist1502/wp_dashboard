@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.__mf__temp/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+@mf-types/
