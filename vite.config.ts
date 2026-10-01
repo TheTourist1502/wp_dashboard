@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
         name: 'wp_dashboard',
         filename: 'remoteEntry.js',
         exposes: {
-          './routes': './src/routing/routeConfig.tsx',
+          './routes': './src/routing/route-config.tsx',
         },
         remotes: {
           wp_shared: { type: 'module', name: 'wp_shared', entry: env.VITE_WP_SHARED_URL },

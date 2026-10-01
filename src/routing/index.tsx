@@ -9,7 +9,7 @@ import {
 import { Suspense } from 'react';
 
 import { APP_ROUTES } from '../constants/routes';
-import { createRoutes } from './routeConfig';
+import { createRoutes } from './route-config';
 
 // Standalone router for running this remote on its own port. The host never loads this file.
 const rootRoute = createRootRoute({

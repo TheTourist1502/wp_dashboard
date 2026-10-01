@@ -23,7 +23,7 @@ src/
 
 | Key | File | Export | Consumed by |
 |---|---|---|---|
-| `./routes` | `src/routing/routeConfig.tsx` | `createRoutes<TParent extends AnyRoute>(parent: TParent)` → readonly tuple of routes | `wp_layout` (`src/routing/remoteRoutes.tsx`) |
+| `./routes` | `src/routing/routeConfig.tsx` | `createRoutes<TParent extends AnyRoute>(parent: TParent)` → readonly tuple of routes | `wp_layout` (`src/routing/remote-routes.tsx`) |
 
 `createRoutes` builds this module's routes as children of whatever `parent` it gets:
 
@@ -79,7 +79,7 @@ second copy of React or the router breaks hooks and context at runtime.
 3. Add a `createRoute({ getParentRoute: () => parent, ... })` in `createRoutes` and include it in
    the returned tuple.
 4. Add the URL to `routing.routes` in `.claude/docs/wealth-pulse-config.json`. The host needs no
-   change unless the route belongs in the sidebar (`wp_layout/src/constants/menuItems.ts`).
+   change unless the route belongs in the sidebar (`wp_layout/src/constants/menu-items.ts`).
 
 ## Run
 

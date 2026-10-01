@@ -1,0 +1,10 @@
+{
+  "latestErrorEvent": {
+    "code": "TYPE-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"/home/afriduzzaman/.volta/tools/image/node/22.22.0/bin/node /home/afriduzzaman/Projects/wealth-pulse/wp_dashboard/node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/bin/tsc --project /home/afriduzzaman/Projects/wealth-pulse/wp_dashboard/node_modules/.federation/tsconfig.05e557ca0051ac3573ca57f25ad4c408.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "args": {
+      "cmd": "/home/afriduzzaman/.volta/tools/image/node/22.22.0/bin/node /home/afriduzzaman/Projects/wealth-pulse/wp_dashboard/node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/bin/tsc --project /home/afriduzzaman/Projects/wealth-pulse/wp_dashboard/node_modules/.federation/tsconfig.05e557ca0051ac3573ca57f25ad4c408.json"
+    },
+    "timestamp": 1790795596466
+  }
+}
