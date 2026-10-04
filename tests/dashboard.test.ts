@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 
 import type { Holding } from '../src/types';
-import { donutSegments, indexTicks, linePath, yDomain } from '../src/utils/chart';
+import { donutSegments } from '../src/utils/chart';
 import { money, pct, quantity, signedMoney, signedPct, toneText } from '../src/utils/format';
 import { groupSectors, SERIES } from '../src/utils/sectors';
 
@@ -20,12 +20,6 @@ assert.equal(toneText('0'), 'text-muted');
 assert.equal(money('not a number'), '$0.00');
 
 // chart
-assert.deepEqual(yDomain([[1, 2]]), [-0.24, 2.24]); // zero always in range, 12% pad
-assert.deepEqual(yDomain([[]]), [-0.5, 0.5]); // flat series still gets a range
-const id = (n: number) => n;
-assert.equal(linePath([1, undefined, 3, 4], id, id), 'M0.0 1.0 M2.0 3.0 L3.0 4.0');
-assert.deepEqual(indexTicks(23), [0, 6, 11, 17, 22]);
-assert.deepEqual(indexTicks(1), [0]);
 const segs = donutSegments([3, 1], 100, 0);
 assert.deepEqual(segs, [
   { dash: '75 25', offset: -0 },

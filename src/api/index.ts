@@ -1,7 +1,7 @@
 import { queryOptions } from '@tanstack/react-query';
-import { API_ENDPOINTS } from 'wp_shared/constants';
 import { http } from 'wp_shared/http_service';
 
+import { API_ENDPOINTS } from '../constants';
 import type {
   DashboardSummary,
   Holding,

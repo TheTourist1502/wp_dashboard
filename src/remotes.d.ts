@@ -70,19 +70,3 @@ declare module 'wp_shared/http_service' {
   };
   export function request<T>(path: string, init?: RequestInit): Promise<T>;
 }
-
-declare module 'wp_shared/constants' {
-  export const API_ENDPOINTS: {
-    readonly PORTFOLIOS: {
-      readonly LIST: string;
-      readonly TRANSACTIONS: (portfolioId: string) => string;
-    };
-    readonly DASHBOARD: {
-      readonly SUMMARY: string;
-      readonly HOLDINGS: string;
-      readonly PERFORMANCE: string;
-    };
-    readonly MARKET: { readonly INDICES: string; readonly MOVERS: string };
-    readonly NEWS: { readonly MARKET: string; readonly HOLDINGS: string };
-  };
-}
